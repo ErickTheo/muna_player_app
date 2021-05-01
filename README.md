@@ -24,8 +24,8 @@ N/A yet
 
 ## Build Requirements
 
-IDE: Android Studio 4.1.x
-Flutter: 2.0.x
+* IDE: Android Studio 4.1.x
+* Flutter: 2.0.x
 
 ## Build Instructions
 

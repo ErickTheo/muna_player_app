@@ -10,7 +10,7 @@ Muna Music Player App. Candidate take home test.
 - [Build Requirements](#build-requirements)
 - [Build Instructions](#build-instructions)
 - [Code Guidelines](#code-guidelines)
-- [3rd Parties Libraries](#3rd-parties-library)
+- [3rd Party Libraries](#3rd-party-libraries)
 
 ## Quick start
 
@@ -60,16 +60,16 @@ The idea behind the clean architecture concept is to make the project scalable, 
 
 [S.O.L.I.D](https://en.wikipedia.org/wiki/SOLID)
 
-S: Single responsibility
-O: Open closed
-L: Liskov Substitution
-I: Interface segregation
-D: Dependency inversion
+* S: Single responsibility
+* O: Open closed
+* L: Liskov Substitution
+* I: Interface segregation
+* D: Dependency inversion
 
-## 3rd Parties Libraries
+## 3rd Party Libraries
 
 ## [GetX](https://pub.dev/packages/get) 
-State Manager, Navigation Manager, Dependencies Manager
-Quick explanation: [Medium](https://medium.com/flutter-community/the-flutter-getx-ecosystem-state-management-881c7235511d)
-Tutorial: [Installation](https://pub.dev/packages/get/install)
+* State Manager, Navigation Manager, Dependencies Manager
+* Quick explanation: [Medium](https://medium.com/flutter-community/the-flutter-getx-ecosystem-state-management-881c7235511d)
+* Tutorial: [Installation](https://pub.dev/packages/get/install)
 

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:muna_player_app/core/colors.dart';
 import 'package:muna_player_app/core/images.dart';
 
-
 class SongItem extends StatelessWidget {
   const SongItem({
     @required this.thumbnail,

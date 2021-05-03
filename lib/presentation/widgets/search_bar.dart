@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:muna_player_app/core/colors.dart';
 
 class SearchBar extends StatelessWidget {
-
   const SearchBar({
     this.margin = const EdgeInsets.symmetric(horizontal: 28),
   });
@@ -12,6 +11,7 @@ class SearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+        height: 60,
         padding: EdgeInsets.symmetric(
             horizontal: 10, vertical: 10),
         margin: margin,

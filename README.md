@@ -9,6 +9,8 @@ Muna Music Player App. Candidate take home test.
 - [Supported features](#supported-features)
 - [Build Requirements](#build-requirements)
 - [Build Instructions](#build-instructions)
+- [Code Guidelines](#code-guidelines)
+- [3rd Parties Libraries](#3rd-parties-library)
 
 ## Quick start
 
@@ -48,7 +50,26 @@ N/A yet
 3. Click the run icon in the toolbar, or invoke the menu item Run > Run.
 4. After the app build completes, you’ll see the starter app on your device.
 
+## Code Guidelines
+[Reference](https://rodrigolmti.medium.com/clean-architecture-no-flutter-1888c4baa6bc)
 
+### Clean Code Architecture
+The idea behind the clean architecture concept is to make the project scalable, easy to maintain and testable, creating separate layers and always depending on abstractions and not concrete classes.
 
+### Design Principle
 
+[S.O.L.I.D](https://en.wikipedia.org/wiki/SOLID)
+
+S: Single responsibility
+O: Open closed
+L: Liskov Substitution
+I: Interface segregation
+D: Dependency inversion
+
+## 3rd Parties Libraries
+
+## [GetX](https://pub.dev/packages/get) 
+State Manager, Navigation Manager, Dependencies Manager
+Quick explanation: [Medium](https://medium.com/flutter-community/the-flutter-getx-ecosystem-state-management-881c7235511d)
+Tutorial: [Installation](https://pub.dev/packages/get/install)
 

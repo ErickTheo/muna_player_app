@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:muna_player_app/core/colors.dart';
+import 'package:muna_player_app/presentation/screens/HomeController.dart';
 
 class SearchBar extends StatelessWidget {
-  const SearchBar({
+  final HomeController homeController;
+  final EdgeInsets margin;
+
+  SearchBar({
+    this.homeController,
     this.margin = const EdgeInsets.symmetric(horizontal: 28),
   });
-
-  final EdgeInsets margin;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +35,9 @@ class SearchBar extends StatelessWidget {
               height: 1,
             ),
           ),
-
+          onSubmitted: (String str){
+            homeController.search(str);
+          },
         )
     );
   }

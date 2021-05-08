@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:muna_player_app/route/AppPages.dart';
+import 'package:muna_player_app/routes/AppPages.dart';
 
 void main() {
   runApp(MyApp());

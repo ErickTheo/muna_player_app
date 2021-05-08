@@ -2,19 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:muna_player_app/core/colors.dart';
 import 'package:muna_player_app/core/images.dart';
 
-class SongItem extends StatelessWidget {
-  const SongItem({
-    @required this.thumbnail,
+class SongTileWidget extends StatelessWidget {
+  const SongTileWidget({
+    @required this.thumbnailUrl,
     @required this.songName,
     @required this.artist,
     @required this.album,
+    @required this.isPlaying,
   });
 
-  final ImageProvider thumbnail;
+  final String thumbnailUrl;
   final String songName;
   final String artist;
   final String album;
-  final bool isPlaying = true;
+  final bool isPlaying;
 
   Widget _buildContent(BuildContext context) {
     return Column(
@@ -60,7 +61,7 @@ class SongItem extends StatelessWidget {
           Container(
             width: 50,
             height: 50,
-            child: Image(image: thumbnail),
+            child: Image.network(thumbnailUrl),
           ),
           SizedBox(width: 10),
           Expanded(child: _buildContent(context)),

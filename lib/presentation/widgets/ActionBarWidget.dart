@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:muna_player_app/core/images.dart';
+import 'package:muna_player_app/presentation/screens/HomeController.dart';
 
 class ActionBar extends StatelessWidget {
+  final HomeController homeController;
+
+  ActionBar({
+    this.homeController,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -16,7 +23,9 @@ class ActionBar extends StatelessWidget {
                 flex: 1,
                 child: IconButton(
                   icon: Image(image: AppImages.prevIcon),
-                  onPressed: () {},
+                  onPressed: () {
+                    homeController.prevTrack();
+                  },
                 ),
             ),
             SizedBox(width: 24),
@@ -24,7 +33,9 @@ class ActionBar extends StatelessWidget {
                 flex: 1,
                 child: IconButton(
                   icon: Image(image: AppImages.pauseIcon),
-                  onPressed: () {},
+                  onPressed: () {
+                    homeController.stopTrack();
+                  },
                 ),
             ),
             SizedBox(width: 24),
@@ -32,7 +43,9 @@ class ActionBar extends StatelessWidget {
                 flex: 1,
                 child: IconButton(
                   icon: Image(image: AppImages.nextIcon),
-                  onPressed: () {},
+                  onPressed: () {
+                    homeController.nextTrack();
+                  },
                 ),
             ),
             SizedBox(width: 48),

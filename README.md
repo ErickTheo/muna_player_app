@@ -21,8 +21,9 @@ This is a normal flutter app. You should follow the instructions in the [officia
 This app only is only been tested running on Android Emulator: Nexus 6P API 26
 
 ## Supported features
-
-N/A yet
+* Search artist on iTunes
+* Preview song
+* Audio controller (play, pause, next, and prev)
 
 ## Build Requirements
 
@@ -73,3 +74,13 @@ The idea behind the clean architecture concept is to make the project scalable, 
 * Quick explanation: [Medium](https://medium.com/flutter-community/the-flutter-getx-ecosystem-state-management-881c7235511d)
 * Tutorial: [Installation](https://pub.dev/packages/get/install)
 
+## [HTTP](https://pub.dev/packages/http)
+* A composable, Future-based library for making HTTP requests.
+
+## [Assets Audio Player](https://pub.dev/packages/assets_audio_player)
+* Audio player
+* Load audio from url
+* Audio controller
+
+## [Test](https://pub.dev/packages/test)
+* Unit Testing 

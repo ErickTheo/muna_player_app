@@ -11,7 +11,6 @@ class HomeController extends GetxController {
 
   @override
   void onInit() {
-    // search('Westlife');
     super.onInit();
   }
 
@@ -31,28 +30,18 @@ class HomeController extends GetxController {
     var data = await SearchArtist.searchByArtist(searchKey);
     if (data != null) {
       itunesData.value = data;
-      print('DATA LOADED: ${itunesData.value.resultCount}');
-    } else {
-      print('DATA IS NULL');
     }
   }
 
   void playTrack(int trackIndex) {
-    print('PLAY: $trackIndex');
     isPlaying.value = true;
-
     currentTrackIndex = trackIndex;
     audioPlayer.stop();
     audioPlayer.open(
       Audio.network(itunesData.value.results[trackIndex].previewUrl),
       showNotification: false,
       loopMode: LoopMode.single,
-
     );
-    // audioPlayer.playlistAudioFinished.listen((Playing playing){
-    //   print('PLAY NEXT: $nextTrackIndex');
-    //   playTrack(nextTrackIndex);
-    // });
     update();
   }
 
@@ -60,6 +49,7 @@ class HomeController extends GetxController {
     return trackIndex == currentTrackIndex;
   }
 
+  // When button Next is Pressed
   void nextTrack() {
     var nextTrackIndex = currentTrackIndex+1;
     if (nextTrackIndex >= itunesData.value.resultCount) {
@@ -68,6 +58,7 @@ class HomeController extends GetxController {
     playTrack(nextTrackIndex);
   }
 
+  // When button Prev is Pressed
   void prevTrack() {
     var nextTrackIndex = currentTrackIndex-1;
     if (nextTrackIndex < 0) {
@@ -76,6 +67,7 @@ class HomeController extends GetxController {
     playTrack(nextTrackIndex);
   }
 
+  // When button Pause is Pressed or
   void stopTrack() {
     currentTrackIndex = -1;
     isPlaying.value = false;

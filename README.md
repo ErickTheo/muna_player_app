@@ -82,5 +82,5 @@ The idea behind the clean architecture concept is to make the project scalable, 
 * Load audio from url
 * Audio controller
 
-## [Test](https://pub.dev/packages/test)
-* Unit Testing 
+## [Mokito](https://pub.dev/packages/mockito)
+* For mocking data in Unit Testing 
